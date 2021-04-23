@@ -17,6 +17,7 @@ body{
     padding-bottom: 25px;
     background-color: #000;
     color: #fff;
+    width: 102%;
 }
 
 
@@ -71,7 +72,7 @@ body{
 /* Slideshow Container */
 
 #bannerContainer{
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
     height: 100vh;
@@ -146,8 +147,8 @@ body{
 }
 
 .mySlides img{
-   width: 1050px;
-    height: 600px;
+   width: 102%;
+    height: 700px;
 }
 
 /* Next & Prev Buttons */
@@ -173,6 +174,7 @@ body{
     position: relative;
     left: 35px;
     margin: 20px;
+    bottom: 230px;
 }
 
 .dotsContainer span{
@@ -372,8 +374,9 @@ body{
 /* benefits container */
 
 .benefitsContainer{
-  width: 100%;
-  padding: 40px 20px;
+  width: 102%;
+  height: 215px;
+  background-color: #000;
 }
 
 .bRow{
@@ -404,6 +407,7 @@ body{
   color: #fff;
   justify-content: center;
   align-items: center;
+  height: 210px;
 }
 
 /* price container */
@@ -508,13 +512,14 @@ body{
   text-transform: uppercase;
   border: 3px solid #000;
   background-color: rgba(255, 25, 25, 0.856);
+  display: none;
 }
 
 /* footer */
 
 .footer{
-  width: 100%;
-  height: 80vh;
+  width: 102%;
+  height: 100vh;
   background-color: #000;
   color: #fff;
   padding-top: 100px;
@@ -699,7 +704,7 @@ body{
 
 .footerEnd{
   background-color: rgb(128, 128, 128);
-  width: 101%;
+  width: 102%;
   height: 80px;
   text-align: center;
   font-size: 50px;
