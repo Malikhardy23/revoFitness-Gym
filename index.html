@@ -3,100 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="main.css" rel="stylesheet">
-    <title>www.malikhardy.com</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="main.css">
+    <title>www.revo-gym.com</title>
 </head>
 <body>
-    <div class="topContainer">
-        <div class="topSection">
-            <h3>M.H</h3>
-            <navbar class="nav">
-                <a href="#about">About</a>
-                <a href="#portfolio">Portfolio</a>
-                <a href="#contact">Contact</a>
-            </navbar>
+    <div id="topContainer">
+        <div class="logoContainer">
+            <ion-icon name="barbell-outline"></ion-icon>
+            <h3>Revo Gym Fitness</h3>
+            <ion-icon name="barbell-outline"></ion-icon>
         </div>
-        <div class="introText">
-            <h1>Malik Hardy</h1>
-            <h2>Front End Web Developer</h2>
+        <div class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Classes</a>
+        </div>
+        <div id="userIcons">
+            <ion-icon name="person-outline"></ion-icon>
+            <ion-icon name="cart-outline"></ion-icon>
+        </div>
+        <div id="userSearch">
+            <input type="text">
+            <ion-icon name="search-outline"></ion-icon>
         </div>
     </div>
-    <div id="aboutContainer">
-        <div id="about">
-            <div class="aboutContent">
-                <div class="aboutImgContainer">
-                    <div class="aboutImage"></div>
+    <!-- Slideshow container -->
+    <div id="bannerContainer">
+        
+    <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <img src="./fitnessImage1.jpeg">
+            <!-- <div class="text1"> <a href="#" target="_blank">Sign Up</a></div> -->
+            <div class="crossfitText">Join Our Cross Fit Class</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./fitnessImage2.jpeg">
+            <!-- <div class="text2"><a href="#" target="_blank">Shop Now</a></div> -->
+            <div class="saleText" style="left: 5px; text-align: center;">50% Off All New Revo Fitness Products</div>
+        </div>
+
+        <div class="mySlides fade">
+            <img src="./fitnessImage3.jpeg">
+            <!-- <div class="text3"> <a href="#" target="_blank">Become Stronger</a></div> -->
+            <div class="caption3">Join Our Strength Class</div>
+           <!----- <a href="#">Sign Up</a> --->
+        </div>
+    <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <!-- The dots/circles -->
+    <div class="dotsContainer" style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-----featured-container---->
+    <div class="midSectionContainer">
+        <h1>Featured Classes</h1>
+        <div id="featuredClassesContainer">
+            <div class="featured combatContainer">
+                <div class="combatImage"></div>
+                <div class="combatText">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti libero unde perferendis et. Vero inventore aliquid, porro placeat id asperiores architecto vitae eveniet quo dignissimos totam recusandae</p>
                 </div>
-                <div class="aboutText">
-                    <h1>About Me</h1>
-                    <h3>Hello, I'm Malik Hardy,<br>I'm Based in Long Island, New York. I'm a passionate developer who loves simplicity in things and crafts beautiful user interfaces with creativity.</h3>
-                    <div class="iconsContainer">
-                        <a href="#"><ion-icon name="logo-github"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                        <a href="#"><ion-icon name="logo-codepen"></ion-icon></a>
-                        <a href = "mailto: Malikhardy23@gmail.com" target="_blank"><ion-icon name="send-outline"></ion-icon></a>
-                    </div>
+                <a href="#">Join Now</a>
+            </div>
+            <div class="featured coreContainer">
+                <div class="coreImage"></div>
+                <div class="coreText">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex deleniti libero unde perferendis et. Vero inventore aliquid, porro placeat id asperiores architecto vitae eveniet quo dignissimos totam recusandae</p>
+                </div>
+                <a href="#">Join Now</a>
+            </div>
+        </div>
+    </div>
+
+    <!------------benefits container--------------------->
+    <div class="benefitsContainer">
+        <div class="benefitsRow">
+            <div class="bRow consultation">
+                <div class="iconContainer1">
+                    <ion-icon name="headset-outline"></ion-icon>
+                    <h4>Free Consultation</h4>
+                    <p>Donec finibus ulicies vulputate tupis, id mollis massa laoreet</p>
+                </div>
+            </div>
+            <div class="bRow service">
+                <div class="iconContainer2">
+                    <ion-icon name="star-outline"></ion-icon>
+                    <h4>Excellent Service</h4>
+                    <p>Aenean sagittis sodales tincidunt augue ut sagittis faucibus</p>
+                </div>
+            </div>
+            <div class="bRow trainers">
+                <div class="iconContainer3">
+                    <ion-icon name="trophy-outline"></ion-icon>
+                    <h4>Best Trainers</h4>
+                    <p>Praesent non varius neque porta egestas sem faucibus</p>
+                </div>
+            </div>
+            <div class="bRow programs">
+                <div class="iconContainer4">
+                    <ion-icon name="thumbs-up-outline"></ion-icon>
+                    <h4>Fitness Programs</h4>
+                    <p>Curabitur ut suscipit nisi mattis elit, magna libero velit</p>
                 </div>
             </div>
         </div>
     </div>
-    <div id="portfolioContainer">
-        <div id="portfolio">
-            <h1>My Projects</h1>
-            <div class="portfolioContent">
-                <div class="container" id="project1Container">
-                <div class="project projectImg1"></div>
-                <div class="overlay">
-                    <a href="https://berniesburgers.netlify.app/" target="_blank"><h2>Burger Restaurant</h2></a>
-                    <div class="techContainer">
-                        <ion-icon name="logo-html5"></ion-icon>
-                        <ion-icon name="logo-css3"></ion-icon>
-                        <ion-icon name="logo-javascript"></ion-icon>
-                    </div>
-                </div>
-                </div>
-                <div class="container project2Container">
-                    <div class="project projectImg2"></div>
-                    <div class="overlay">
-                        <h2>Interactive Form</h2>
-                    </div>
-                </div>
-                <div class="container project3Container">
-                    <div class="project projectImg3"></div>
-                    <div class="overlay">
-                        <h2>Ecommerce Website</h2>
-                    </div>
-                </div>
-                <div class="container project4Container">
-                    <div class="project projectImg4"></div>
-                    <div class="overlay">
-                        <h2>List Pagination Form</h2>
-                    </div>
-                </div>
-                <div class="container project5Container">
-                    <div class="project projectImg5"></div>
-                    <div class="overlay">
-                        <a href="https://revrevogym.com" target="_blank"><h2>Gym Website</h2></a>
-                        <div class="techContainer">
-                            <ion-icon name="logo-html5"></ion-icon>
-                            <ion-icon name="logo-css3"></ion-icon>
-                            <ion-icon name="logo-javascript"></ion-icon>
-                        </div>
-                    </div>
-                </div>
-                <div class="container project6Container">
-                    <div class="project projectImg6"></div>
-                    <div class="overlay">
-                        <h2>Vacation Resort Website</h2>
-                    </div>
-                </div>
+    <!-------UPCOMING EVENTS------------>
+    <div class="upcomingEvents">
+        <div class="eventsContainer">
+            <div class="event event1">
+                <div class="eventImage1"></div>
+                <h4>How To Get Shredded</h4>
+                <p>Suspendisse vel nisl sed turpis viverra tincidunt. Proin accumsan orci.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="event event2">
+                <div class="eventImage2"></div>
+                <h4>Bigger Arms in 5 minutes</h4>
+                <p>Suspendisse vel nisl sed turpis viverra tincidunt. Proin accumsan orci.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="event event3">
+                <div class="eventImage3"></div>
+                <h4>Diet Tips</h4>
+                <p>Suspendisse vel nisl sed turpis viverra tincidunt. Proin accumsan orci.</p>
+                <a href="#">Read More</a>
             </div>
         </div>
+        <button class="allEvents">All Events</button>
     </div>
+    <!--------footer------->
     <div class="footer">
-        © Malik Hardy 2021 | All Right Reserved
+        <div class="footerContainer">
+            <div class="section aboutContainer">
+                <h4>About Us</h4>
+                <p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent sem per varius leo, sed efficitur libero. Integer accumsan risus sed fermentum tristie. Donec imperdiet enim.</p>
+                <div class="socialMediaBox">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-google"></ion-icon>
+                    <ion-icon name="logo-dribbble"></ion-icon>
+                    <ion-icon name="logo-linkedin"></ion-icon>
+                </div>
+            </div>
+            <div class="section recentPost">
+                <h1>Recent Posts</h1>
+                <div class="post post1">
+                    <div class="postimage1"></div>
+                    <a href="#">Get Stronger</a>
+                </div>
+                <div class="post post2">
+                    <div class="postimage2"></div>
+                    <a href="#">Get Stronger</a>
+                </div>
+                <div class="post post3">
+                    <div class="postimage3"></div>
+                    <a href="#">Get Stronger</a>
+                </div>
+            </div>
+            <div class="section upcomingEvents">
+                <h1>Upcoming Events</h1>
+                <div class="uEvent event1">
+                    <div class="EventImage1"></div>
+                    <a href="#">Get Lean</a>
+                </div>
+                <div class="uEvent event2">
+                    <div class="EventImage2"></div>
+                    <a href="#">Get Lean</a>
+                </div>
+                <div class="uEvent event3">
+                    <div class="EventImage3"></div>
+                    <a href="#">Get Lean</a>
+                </div>
+            </div>
+            <div class="section ContactUs">
+                <h1>Contact Us</h1>
+                <div class="contactInfo">
+                    <div class="cRow telephoneClass">
+                        <ion-icon name="call-outline"></ion-icon>
+                        (1) 310-474-0000
+                    </div>
+                    <div class="cRow mailClass">
+                        <ion-icon name="send-outline"></ion-icon>
+
+                        info@Example.com
+                    </div>
+                    <div class="cRow locationClass">
+                        <ion-icon name="location-outline" class="location-outline"></ion-icon>
+                        1011 Santa Monica Boulevard Los Angeles
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+    <div class="footerEnd">Revo Gym&#8482</div>
+    <script src="main.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-    <script src="index.js"></script>
 </body>
 </html>
